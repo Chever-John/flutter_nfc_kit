@@ -105,9 +105,9 @@ packages:
   ndef:
     dependency: transitive
     description:
-      name: ndef
-      url: "https://pub.dartlang.org"
-    source: hosted
+      path: "/Users/mr8god/OSPP/ProjectCode/ndef_migrate"
+      relative: false
+    source: path
     version: "0.2.3"
   path:
     dependency: transitive
