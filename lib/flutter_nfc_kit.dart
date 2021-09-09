@@ -138,7 +138,7 @@ extension NDEFRecordConvert on ndef.NDEFRecord {
   /// Convert an [ndef.NDEFRecord] to encoded [NDEFRawRecord]
   NDEFRawRecord toRaw() {
     return NDEFRawRecord(
-        id!.toHexString(), payload!.toHexString(), type!.toHexString(), this.tnf);
+        Uint8List.fromList('id'.codeUnits).toHexString(), Uint8List.fromList('payload'.codeUnits).toHexString(), type!.toHexString(), this.tnf);
   }
 
   /// Convert an [NDEFRawRecord] to decoded [ndef.NDEFRecord].

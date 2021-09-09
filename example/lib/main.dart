@@ -252,7 +252,7 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
                             _records!.length,
                             (index) => GestureDetector(
                                   child: Text(
-                                      'id:${_records![index].id!.toHexString()}\ntnf:${_records![index].tnf}\ntype:${_records![index].type!.toHexString()}\npayload:${_records![index].payload!.toHexString()}\n'),
+                                      'id:${_records![index].idString}\ntnf:${_records![index].tnf}\ntype:${_records![index].type!.toHexString()}\npayload:${_records![index].payload!.toHexString()}\n'),
                                   onTap: () async {
                                     final result = await Navigator.push(context,
                                         MaterialPageRoute(builder: (context) {
